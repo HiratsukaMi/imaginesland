@@ -234,9 +234,21 @@ button {
 		padding: 3em 2em 2em;
 	}
 
+  .img-adms {
+    height: 100px;
+  }
+
+  .lista-membros {
+    height: 340em;
+  }
+
+  .lista-membros .grid {
+    height: calc(1000vh - 1280px);
+  }
+
 	.grid {
 		grid-template-columns: 250px 250px;
-		height: calc(100vh - 75px);
+		height: calc(100vh - 250px);
 	}
 }
 
