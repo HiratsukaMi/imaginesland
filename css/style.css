@@ -197,10 +197,6 @@ button {
 	width: 150px;
 }
 
-.img-adms {
-  height: 150px;
-}
-
 .img-membros {
   height: 100px;
 }
@@ -217,14 +213,6 @@ button {
 	align-content: center;
 	justify-content: center;
 	text-align: center;
-}
-
-.lista-membros .grid {
-  height: 170em;
-}
-
-.lista-membros {
-  height: 170em;
 }
 
 @media (min-width: 400px) {
@@ -258,6 +246,18 @@ button {
 	.membros-da-staff {
 		padding: 10em;
 	}
+
+  .img-adms {
+    height: 150px;
+  }
+
+  .lista-membros {
+    height: 170em;
+  }
+
+  .lista-membros .grid {
+    height: 170em;
+  }
 
 	.grid {
 		grid-template-columns: repeat(4, 250px);
