@@ -1,0 +1,216 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+/* Works on Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #dbbaf3 #f3f1f1;
+  }
+  
+  /* Works on Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 12px;
+  }
+  
+  *::-webkit-scrollbar-track {
+    background: #f3f1f1;
+  }
+  
+  *::-webkit-scrollbar-thumb {
+    background-color: #dbbaf3;
+    border-radius: 20px;
+    border: 3px solid #f3f1f1;
+  }
+
+body {
+  font-family: 'Oregano', cursive;
+  text-align: center;
+  background-color: #fef0a9;
+}
+
+/* se a tela tiver pelo menos 400px vai carregar estes estilos */
+@media (min-width: 400px) {
+  body {
+    font-size: 14px;
+  }
+}
+  
+/* breakpoint */
+@media (min-width: 600px) {
+  body {
+    font-size: 15px;
+  }
+}
+
+/* breakpoint */
+@media (min-width: 1200px) {
+  body {
+    font-size: 15px;
+  }
+}
+
+.bg {
+  background-image: url("https://cdn.pixabay.com/photo/2017/08/02/18/25/architecture-2572762_960_720.jpg");
+  background-size: cover;
+  background-position: left;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0; 
+  left: 0;
+  opacity: 0.8;
+  z-index: -10;
+}
+
+.margin {
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.listasDeLeitura {
+  height: 555vh;
+  padding: 6em;
+	background-color: rgba(161,211,255,0.7);
+	color: #18194F;
+}
+
+.footer {
+	background-color: #F3F1F1;
+	padding-top: 10px;
+	font-size: 15px;
+}
+
+.navbar header {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  align-content: center;
+  background-color: rgba(161,164,255,0.7);;
+}
+
+.imagem-titulo {
+  max-height: 100px;
+  margin: 15px 10px 13px;
+  opacity: 0.7;
+}
+
+.break {
+  flex-basis: 100%;
+  height: 0;
+}
+
+.navbar {
+  background-color: rgba(255,252,161,0.7);
+  position: fixed;
+	width: 100vw;
+  top: 0;
+	padding-top: 10px;
+	z-index: 1;
+}
+
+.menu-lista {
+  display: flex;
+	justify-content: space-around;
+}
+
+.collapse {
+  justify-content: center;
+  font-size: x-large;
+}
+
+.imaginesland-logo {
+  position: fixed;
+  top: 5px;
+  right: 10px;
+  color:#dd406d;
+  z-index: 1;
+}
+
+input {
+  margin: 10px 4px 4px 4px;
+  padding: 4px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.wrapper-inputs {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding-bottom: 5px;
+}
+
+button {
+  font-family: 'Oregano', cursive;
+  font-size: 20px;
+  margin-top: 12px;
+  padding: 2px 8px;
+  border-radius: 10px;
+  background: #ffffff;
+}
+
+.img-listasDeLeitura {
+	border-radius: 0px 25px 25px 25px;
+	object-fit: cover;
+	width: 150px;
+  height: 100px;
+}
+
+/*.lista-leitura .grid {
+  height: calc(515vh - 75px);
+}*/
+
+.listasDeLeitura figcaption {
+	font-weight: bold;
+  font-size: 1.1em;
+}
+
+.grid {
+	display: grid;
+	gap: 1em;
+	align-content: center;
+	justify-content: center;
+	text-align: center;
+}
+
+@media (min-width: 400px) {
+
+	.listasDeLeitura {
+		padding: 3em 2em 2em;
+	}
+
+	.grid {
+		grid-template-columns: 250px 250px;
+		height: calc(100vh - 250px);
+	}
+}
+
+@media (min-width: 900px) {
+
+	.listasDeLeitura {
+		padding: 10em;
+	}
+
+	.grid {
+		grid-template-columns: repeat(4, 250px);
+		height: calc(470vh - 20.5em - 75px);
+	}
+}
+
+@media (min-width: 1300px) {
+
+	.listasDeLeitura {
+		padding: 10em;
+	}
+
+	.grid {
+		grid-template-columns: repeat(4, 250px);
+		height: calc(520vh - 1.5em);
+	}
+}
