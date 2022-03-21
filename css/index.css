@@ -97,12 +97,6 @@ body {
 	font-size: 15px;
 }
 
-.titulo {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
 header {
   height: 100vh;
   display: flex;
@@ -110,29 +104,13 @@ header {
   align-items: center;
   flex-wrap: wrap;
   align-content: center;
-  background-color: rgba(161,164,255,0.7);;
-}
-
-.page-title {
-  font-family: 'Cinzel Decorative', cursive;
-  font-size: 50px;
-  color: 	#dd406d;
-  margin: 0 0 5px;
-  opacity: 0.8;
+  background-color: rgba(152, 153, 201, 0.7);
 }
 
 .imagem-titulo {
   max-height: 100px;
   margin: 0px 10px 13px;
   opacity: 0.8;
-}
-
-.page-subtitle {
-  color: 	#dd406d;
-  margin: 0 0 5px;
-  font-size: xx-large;
-  text-decoration: overline;
-  text-decoration-style: dotted;
 }
 
 .break {
@@ -152,6 +130,10 @@ header {
 .menu-lista {
   display: flex;
 	justify-content: space-around;
+}
+
+li.nav-item {
+  padding-right: 10px;
 }
 
 .collapse {
@@ -222,12 +204,16 @@ button {
 		padding: 3em 2em 2em;
 	}
 
+  .titulo {
+    height: 20vh;
+  }
+
   .img-adms {
     height: 100px;
   }
 
   .lista-membros {
-    height: 340em;
+    height: 365em;
   }
 
   .lista-membros .grid {
@@ -235,17 +221,63 @@ button {
   }
 
 	.grid {
-		grid-template-columns: 250px 250px;
-		height: calc(100vh - 250px);
+		grid-template-columns: 135px 190px;
+    height: calc(100vh - 250px);
 	}
 }
 
+@media (min-width: 600px){
+
+  .membros-da-staff {
+    height: 845vh;
+  }
+
+  .titulo {
+    height: 35vh;
+  }
+
+  .lista-membros {
+    height: 345em;
+  }
+
+  .grid {
+    grid-template-columns: 250px 225px;
+    height: calc(100vh - 250px);
+  }
+}
+
+@media (min-width: 700px){
+  .membros-da-staff {
+    height: 595vh;
+  }
+
+  .titulo {
+    height: 40vh;
+  }
+
+  .lista-membros {
+    height: 240em;
+  }
+
+  .lista-membros .grid {
+    height: calc(760vh - 1280px);
+  }
+
+  .grid {
+    grid-template-columns: repeat(3, 220px);
+    height: calc(100vh - 250px);
+  }
+}
+
 @media (min-width: 900px) {
-	.adms,
-	.sobre,
 	.membros-da-staff {
+    height: 490vh;
 		padding: 10em;
 	}
+
+  .titulo {
+    height: 50vh;
+  }
 
   .img-adms {
     height: 150px;
@@ -256,21 +288,29 @@ button {
   }
 
   .lista-membros .grid {
-    height: 170em;
+    height: 180em;
   }
 
 	.grid {
-		grid-template-columns: repeat(4, 250px);
+		grid-template-columns: repeat(4, 210px);
 		height: calc(100vh - 20.5em - 75px);
 	}
 }
 
 @media (min-width: 1300px) {
 	.adms,
-	.sobre,
-	.membros-da-staff {
+	.sobre {
 		padding: 10em;
 	}
+
+  .membros-da-staff {
+    height: 425vh;
+    padding: 10em;
+  }
+
+  .titulo {
+    height: 60vh;
+  }
 
 	.grid {
 		grid-template-columns: repeat(4, 250px);

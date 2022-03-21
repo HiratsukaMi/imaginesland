@@ -72,7 +72,7 @@ body {
 }
 
 .listasDeLeitura {
-  height: 555vh;
+  height: auto;
   padding: 6em;
 	background-color: rgba(161,211,255,0.7);
 	color: #18194F;
@@ -119,6 +119,10 @@ body {
 	justify-content: space-around;
 }
 
+li.nav-item {
+  padding-right: 10px;
+}
+
 .collapse {
   justify-content: center;
   font-size: x-large;
@@ -141,9 +145,16 @@ input {
 
 .wrapper-inputs {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   gap: 20px;
   padding-bottom: 5px;
+}
+
+.letra {
+  padding: 7px 25px;
+  border-radius: 7px;
+  text-align: center;
 }
 
 button {
@@ -162,10 +173,6 @@ button {
   height: 100px;
 }
 
-/*.lista-leitura .grid {
-  height: calc(515vh - 75px);
-}*/
-
 .listasDeLeitura figcaption {
 	font-weight: bold;
   font-size: 1.1em;
@@ -179,38 +186,93 @@ button {
 	text-align: center;
 }
 
+.grid-pesquisa {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.grid-pesquisa p {
+  padding: 7px;
+  margin: auto;
+}
+
 @media (min-width: 400px) {
 
 	.listasDeLeitura {
+    height: 510em;
 		padding: 3em 2em 2em;
 	}
 
+  .grid-pesquisa {
+    grid-template-columns: repeat(2, 145px);
+  }
+
+  .grid-pesquisa p {
+    font-size: 15px;
+  }
+
 	.grid {
-		grid-template-columns: 250px 250px;
-		height: calc(100vh - 250px);
+		grid-template-columns: 140px 215px;
+    height: calc(1100vh - 250px);
 	}
+
+  .imaginesland-logo {
+    right: 10px;
+  }
+}
+
+@media (min-width: 600px) {
+  .listasDeLeitura {
+    height: 485em;
+		padding: 3em 2em 2em;
+	}
+
+  .grid {
+    grid-template-columns: 140px 215px;
+    height: calc(1122vh - 250px);
+  }
 }
 
 @media (min-width: 900px) {
 
 	.listasDeLeitura {
+    height: 340em;
 		padding: 10em;
 	}
 
+  .grid-pesquisa {
+    grid-template-columns: repeat(2, 185px);
+  }
+
+  .grid-pesquisa p {
+    font-size: 18px;
+  }
+
 	.grid {
-		grid-template-columns: repeat(4, 250px);
-		height: calc(470vh - 20.5em - 75px);
+		grid-template-columns: repeat(3, 250px);
+    height: calc(785vh - 20.5em - 75px);
 	}
 }
 
 @media (min-width: 1300px) {
 
 	.listasDeLeitura {
+    height: 270em;
 		padding: 10em;
 	}
 
+  .grid-pesquisa {
+    grid-template-columns: repeat(2, 260px);
+  }
+
+  .grid-pesquisa p {
+    font-size: 22px;
+  }
+
 	.grid {
 		grid-template-columns: repeat(4, 250px);
-		height: calc(520vh - 1.5em);
+		height: calc(505vh - 1.5em);
 	}
 }

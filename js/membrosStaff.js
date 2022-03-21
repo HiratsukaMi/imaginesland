@@ -399,30 +399,32 @@ function ListarMembros() {
 
 ListarMembros();
 
-var encontrados = [];
-var elementoExibirPesquisa = document.getElementById("pesquisa");
 $("#pesquisa").hide();
 
-$(function(){
-    $("#userUsuario").keyup(function(){ 
-        debugger;      
-        var valor = $(this).val().toUpperCase();
-        var i = 0;
-        $("#exibirMembros").show();
-        //const regex = new RegExp(`^(${value})$`, 'gi');
-        $(membrosStaff[i]).each(function(){
-            debugger;
-            if($(membrosStaff[i].user).text().toUpperCase().indexOf(valor) < 0){
-                encontrados.push(membrosStaff[i]);
-                $("#exibirMembros").hide();
-                $("#pesquisa").show();
-                elementoExibirPesquisa.innerHTML = '<figure><a href="' + encontrados[i].perfil + '"><img class="img-membros" src="' + encontrados[i].avatar + '"></a><figcaption>' + encontrados[i].user + '<br>' + encontrados[i].cargo + '</figcaption></figure>';
+// var encontrados = [];
+// var elementoExibirPesquisa = document.getElementById("pesquisa");
+// $("#pesquisa").hide();
 
-            }
-        });
-    });
+// $(function(){
+//     $("#userUsuario").keyup(function(){ 
+//         debugger;      
+//         var valor = $(this).val().toUpperCase();
+//         var i = 0;
+//         $("#exibirMembros").show();
+//         //const regex = new RegExp(`^(${value})$`, 'gi');
+//         $(membrosStaff[i]).each(function(){
+//             debugger;
+//             if($(membrosStaff[i].user).text().toUpperCase().indexOf(valor) < 0){
+//                 encontrados.push(membrosStaff[i]);
+//                 $("#exibirMembros").hide();
+//                 $("#pesquisa").show();
+//                 elementoExibirPesquisa.innerHTML = '<figure><a href="' + encontrados[i].perfil + '"><img class="img-membros" src="' + encontrados[i].avatar + '"></a><figcaption>' + encontrados[i].user + '<br>' + encontrados[i].cargo + '</figcaption></figure>';
+
+//             }
+//         });
+//     });
  
-    $("#userUsuario").blur(function(){
-        $(this).val("");
-    });
-});
+//     $("#userUsuario").blur(function(){
+//         $(this).val("");
+//     });
+// });
