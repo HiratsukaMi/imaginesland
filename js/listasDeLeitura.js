@@ -6,7 +6,7 @@ var listaDeLeitura = [{ id: "1", capa: "https://pbs.twimg.com/media/ESLeoC0XsAAq
     { id: "6", capa: "https://rollingstone.uol.com.br/media/_versions/big-time-rush-gettyimages-126288545_widelg.jpg", nome: "Big Time Rush", link: "https://www.spiritfanfiction.com/listas/big-time-rush-7932920", },
     { id: "7", capa: "https://areajugones.sport.es/wp-content/uploads/2021/03/imagen-2021-03-31-094042-1080x609.jpg", nome: "Black Clover", link: "https://www.spiritfanfiction.com/listas/black-clover-7932923", },
     { id: "8", capa: "https://www.planocritico.com/wp-content/uploads/2017/09/78-My-Hero-Academia-1-Temporada.jpg", nome: "Boku no Hero Academia", link: "https://www.spiritfanfiction.com/listas/boku-no-hero-academia-7932931", },
-    { id: "9", capa: "https://www.jbox.com.br/wp/wp-content/uploads/2018/07/bungostraydogs-destacada.jpg", nome: "Bungou Stray Dogs", link: "https://www.spiritfanfiction.com/listas/bungou-stray-dogs-7932944", },
+    { id: "9", capa: "https://www.animeunited.com.br/oomtumtu/2020/06/Bungou-Stray-Dogs-Anime.jpg", nome: "Bungou Stray Dogs", link: "https://www.spiritfanfiction.com/listas/bungou-stray-dogs-7932944", },
     { id: "10", capa: "https://cdn.ome.lt/k9Zr8E0Sb2bbHMCPUmHYVGExsqM=/1200x630/smart/extras/conteudos/burn-the-witch-manga.jpg", nome: "Burn the Witch", link: "https://www.spiritfanfiction.com/listas/burn-the-witch-7932948", },
     { id: "11", capa: "https://farm1.staticflickr.com/799/40909731121_1e704c9fd1_b.jpg", nome: "B: the Beginning", link: "https://www.spiritfanfiction.com/listas/b-the-beginning-7932952", },
     { id: "12", capa: "https://ramenparados.com/wp-content/uploads/2018/09/Castlevania-900x600.jpg", nome: "Castlevania", link: "https://www.spiritfanfiction.com/listas/castlevania-7932953", },
