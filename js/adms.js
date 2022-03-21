@@ -1,6 +1,6 @@
-var avatarAdms = ["https://uploads.spiritfanfiction.com/usuarios/avatares/201405/pixeltyrell-406289-120320221714.gif",
-                  "https://uploads.spiritfanfiction.com/usuarios/avatares/201508/nanahoshi-894906-070320221043.gif",
-                  "https://uploads.spiritfanfiction.com/usuarios/avatares/201508/cecilrssrs-885194-250220221645.png"];
+var avatarAdms = ["img/pixeltyrell.gif",
+                  "img/nanahoshi.gif",
+                  "img/cecilrssrs.png"];
 var usersAdms = ["@_Heisenberg", "@Nanahoshi", "@Panxinha"];
 var cargosAdms = ["ADM jojofag, ficwriter, designer",
                   "ADM Power Ranger, ficwriter, beta",
