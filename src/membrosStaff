@@ -1,0 +1,3 @@
+CREATE TABLE `imaginesland`.`membrosstaff` ( `idUsuario` INT UNSIGNED NOT NULL AUTO_INCREMENT , `avatarUsuario` VARCHAR NOT NULL , `nickUsuario` VARCHAR NOT NULL , `cargoUsuario` VARCHAR NOT NULL , `perfilUsuario` VARCHAR NOT NULL , PRIMARY KEY (`idUsuario`)) ENGINE = InnoDB;
+
+CREATE TABLE `imaginesland`.`listasdeleitura` ( `idListasDeLeitura` INT UNSIGNED NOT NULL AUTO_INCREMENT , `capaListasDeLeitura` VARCHAR(100) NOT NULL , `nomeListasDeLeitura` VARCHAR(100) NOT NULL , `linkListasDeLeitura` VARCHAR(100) NOT NULL , PRIMARY KEY (`idListasDeLeitura`)) ENGINE = InnoDB;

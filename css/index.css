@@ -1,319 +1,281 @@
 * {
-  margin: 0px;
-  padding: 0px;
-  box-sizing: border-box;
-}
-
-/* Works on Firefox */
-* {
-  scrollbar-width: thin;
-  scrollbar-color: #dbbaf3 #f3f1f1;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
   }
   
-  /* Works on Chrome, Edge, and Safari */
-  *::-webkit-scrollbar {
-    width: 12px;
+  /* Works on Firefox */
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: #dbbaf3 #f3f1f1;
+    }
+    
+    /* Works on Chrome, Edge, and Safari */
+    *::-webkit-scrollbar {
+      width: 12px;
+    }
+    
+    *::-webkit-scrollbar-track {
+      background: #f3f1f1;
+    }
+    
+    *::-webkit-scrollbar-thumb {
+      background-color: #dbbaf3;
+      border-radius: 20px;
+      border: 3px solid #f3f1f1;
+    }
+
+  .margin {
+    padding-top: 20px;
+    padding-bottom: 20px;
   }
   
-  *::-webkit-scrollbar-track {
-    background: #f3f1f1;
-  }
-  
-  *::-webkit-scrollbar-thumb {
-    background-color: #dbbaf3;
-    border-radius: 20px;
-    border: 3px solid #f3f1f1;
-  }
-
-body {
-  font-family: 'Oregano', cursive;
-  text-align: center;
-  background-color: #fef0a9;
-}
-
-/* se a tela tiver pelo menos 400px vai carregar estes estilos */
-@media (min-width: 400px) {
   body {
-    font-size: 14px;
+    font-family: 'Oregano', cursive;
+    text-align: center;
+    background-color: #fef0a9;
   }
-}
+
+  .bg {
+    background-image: url("https://cdn.pixabay.com/photo/2017/08/02/18/25/architecture-2572762_960_720.jpg");
+    background-size: cover;
+    background-position: left;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0; 
+    left: 0;
+    opacity: 0.8;
+    z-index: -10;
+  }
+
+  header {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: center;
+    background-color: rgba(152, 153, 201, 0.7);
+  }
   
-/* breakpoint */
-@media (min-width: 600px) {
-  body {
-    font-size: 15px;
+  /* .break {
+    flex-basis: 100%;
+    height: 0;
+  } */
+  
+  .navbar {
+    /* background-color: rgba(255,252,161,0.7); */
+    background-color: rgba(255, 255, 255, 0.7);
+    position: fixed;
+    width: 100vw;
+    top: 0;
+    padding-top: 10px;
+    z-index: 1;
   }
-}
-
-/* breakpoint */
-@media (min-width: 1200px) {
-  body {
-    font-size: 15px;
+  
+  .menu-lista {
+    display: flex;
+    justify-content: space-around;
   }
-}
-
-.bg {
-  background-image: url("https://cdn.pixabay.com/photo/2017/08/02/18/25/architecture-2572762_960_720.jpg");
-  background-size: cover;
-  background-position: left;
-  background-repeat: no-repeat;
-  width: 100%;
-  height: 100%;
-  position: fixed;
-  top: 0; 
-  left: 0;
-  opacity: 0.8;
-  z-index: -10;
-}
-
-.sobre {
-  height: 100vh;
-  padding: 6em;
-	background-color: rgba(161,211,255,0.7);
-	color: #18194F;
-  align-items: center;
-}
-
-.margin {
-	padding-top: 20px;
-	padding-bottom: 20px;
-}
-
-.adms {
-  height: 100vh;
-  padding: 6em;
-	background-color: rgba(205,161,255,0.7);
-	color: #18194F;
-}
-
-.membros-da-staff {
-	background-color: rgba(255,252,161,0.7);
-	color: #18194F;
-}
-
-.footer {
-	background-color: #F3F1F1;
-	padding-top: 10px;
-	font-size: 15px;
-}
-
-header {
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  align-content: center;
-  background-color: rgba(152, 153, 201, 0.7);
-}
-
-.imagem-titulo {
-  max-height: 100px;
-  margin: 0px 10px 13px;
-  opacity: 0.8;
-}
-
-.break {
-  flex-basis: 100%;
-  height: 0;
-}
-
-.navbar {
-  background-color: rgba(255,252,161,0.7);
-  position: fixed;
-	width: 100vw;
-  top: 0;
-	padding-top: 10px;
-	z-index: 1;
-}
-
-.menu-lista {
-  display: flex;
-	justify-content: space-around;
-}
-
-li.nav-item {
-  padding-right: 10px;
-}
-
-.collapse {
-  justify-content: center;
-  font-size: x-large;
-}
-
-.imaginesland-logo {
-  position: fixed;
-  top: 5px;
-  right: 10px;
-  color:#dd406d;
-  z-index: 1;
-}
-
-input {
-  margin: 10px 4px 4px 4px;
-  padding: 4px;
-  border-radius: 5px;
-  text-align: center;
-}
-
-.wrapper-inputs {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  padding-bottom: 5px;
-}
-
-button {
-  font-family: 'Oregano', cursive;
-  font-size: 20px;
-  margin-top: 12px;
-  padding: 2px 8px;
-  border-radius: 10px;
-  background: #ffffff;
-}
-
-.img-adms,
-.img-membros {
-	border-radius: 0px 25px 25px 25px;
-	object-fit: cover;
-	width: 150px;
-}
-
-.img-membros {
-  height: 100px;
-}
-
-.adms figcaption,
-.membros-da-staff figcaption {
-	font-weight: bold;
-  font-size: 1.1em;
-}
-
-.grid {
-	display: grid;
-	gap: 1em;
-	align-content: center;
-	justify-content: center;
-	text-align: center;
-}
-
-@media (min-width: 400px) {
-	.adms,
-	.sobre,
-	.membros-da-staff {
-		padding: 3em 2em 2em;
-	}
-
-  .titulo {
-    height: 20vh;
+  
+  li.nav-item {
+    padding-right: 10px;
+  }
+  
+  .collapse {
+    justify-content: center;
+    font-size: x-large;
+  }
+  
+  .imaginesland-logo {
+    position: fixed;
+    top: 5px;
+    right: 85px;
+    color:#dd406d;
+    z-index: 1;
   }
 
-  .img-adms {
+  .imagem-titulo {
+    max-height: 365px;
+    margin-top: 1em;
+  }
+
+  .sobre {
+    height: 100vh;
+    padding: 6em;
+    background-color: rgba(161,211,255,0.7);
+    color: #18194F;
+    align-items: center;
+  }
+
+  .imagem-sobre {
+    height: 100px;
+    margin: 10px 0px;
+  }
+
+  .adms {
+    height: 100vh;
+    padding: 6em;
+    background-color: rgba(205,161,255,0.7);
+    color: #18194F;
+  }
+
+  #exibirAdms {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+  }
+
+  .img-adms,
+  .img-membros {
+    border-radius: 0px 25px 25px 25px;
+    object-fit: cover;
+    width: 150px;
+  }
+
+  .img-membros {
     height: 100px;
   }
 
-  .lista-membros {
-    height: 365em;
-  }
-
-  .lista-membros .grid {
-    height: calc(1000vh - 1280px);
-  }
-
-	.grid {
-		grid-template-columns: 135px 190px;
-    height: calc(100vh - 250px);
-	}
+  .adms figcaption,
+  .membros-da-staff figcaption {
+    font-weight: bold;
+    font-size: 1.1em;
 }
-
-@media (min-width: 600px){
 
   .membros-da-staff {
-    height: 845vh;
+    background-color: rgba(255,252,161,0.7);
+    color: #18194F;
+    padding: 6em;
   }
 
-  .titulo {
-    height: 35vh;
+  #exibirMembros {
+    display: grid;
+    grid-template-columns: repeat(4, 250px);
+    justify-content: space-around;
+    margin-top: 20px;
   }
 
-  .lista-membros {
-    height: 345em;
+  .footer {
+    background-color: #F3F1F1;
+    padding-top: 10px;
+    font-size: 15px;
   }
 
-  .grid {
-    grid-template-columns: 250px 225px;
-    height: calc(100vh - 250px);
-  }
-}
-
-@media (min-width: 700px){
-  .membros-da-staff {
-    height: 595vh;
-  }
-
-  .titulo {
-    height: 40vh;
-  }
-
-  .lista-membros {
-    height: 240em;
-  }
-
-  .lista-membros .grid {
-    height: calc(760vh - 1280px);
-  }
-
-  .grid {
-    grid-template-columns: repeat(3, 220px);
-    height: calc(100vh - 250px);
-  }
-}
-
-@media (min-width: 900px) {
-	.membros-da-staff {
-    height: 490vh;
-		padding: 10em;
-	}
-
-  .titulo {
-    height: 50vh;
+  @media (max-width: 575.98px){
+    body {
+      font-size: 14px;
+    }
+    .imaginesland-logo {
+      right: 22px;
+    } 
+    #exibirAdms,
+    #exibirMembros {
+      display: grid;
+      grid-template-columns: repeat(2, 185px);
+      justify-content: space-around;
+      margin-top: 20px;
+    }
+    .adms {
+      padding: 6em 0em 40em 0em;
+    }
+    .img-adms {
+      width: 100px;
+    }
+    .imagem-titulo {
+      max-height: 170px;
+      margin-top: 1em;
+    }
   }
 
-  .img-adms {
-    height: 150px;
+  @media (min-width: 576px) and (max-width: 767.98px) {
+    body {
+      font-size: 14px;
+    }
+    .imaginesland-logo {
+      right: 65px;
+    }
+    li.nav-item {
+      padding-right: 10px;
+      font-size: 15px;
+    }
+    #exibirAdms,
+    #exibirMembros {
+      display: grid;
+      grid-template-columns: repeat(2, 185px);
+      justify-content: space-around;
+      margin-top: 20px;
+    }
+    .adms {
+      padding: 6em 0em 40em 0em;
+    }
+    .img-adms {
+      width: 100px;
+    }
+    .imagem-titulo {
+      max-height: 170px;
+      margin-top: 1em;
+    }
   }
 
-  .lista-membros {
-    height: 170em;
+  @media (min-width: 768px) and (max-width: 991.98px) {
+    body {
+      font-size: 14px;
+    }
+    .imaginesland-logo {
+      right: 45px;
+    }
+    li.nav-item {
+      padding-right: 10px;
+      font-size: 22px;
+    }
+    #exibirAdms,
+    #exibirMembros {
+      display: grid;
+      grid-template-columns: repeat(3, 185px);
+      justify-content: space-around;
+      margin-top: 20px;
+    }
+    .adms {
+      padding: 6em 0em 40em 0em;
+    }
+    .img-adms {
+      width: 150px;
+    }
+    .imagem-titulo {
+      max-height: 275px;
+      margin-top: 1em;
+    }
   }
 
-  .lista-membros .grid {
-    height: 180em;
+  @media (min-width: 992px) and (max-width: 1199.98px) {
+    body {
+      font-size: 14px;
+    }
+    .imaginesland-logo {
+      right: 52px;
+    }
+    li.nav-item {
+      padding-right: 10px;
+      font-size: 25px;
+    }
+    #exibirAdms,
+    #exibirMembros {
+      display: grid;
+      grid-template-columns: repeat(3, 185px);
+      justify-content: space-around;
+      margin-top: 20px;
+    }
+    .adms {
+      padding: 6em 0em 40em 0em;
+    }
+    .img-adms {
+      width: 150px;
+    }
+    .imagem-titulo {
+      max-height: 305px;
+      margin-top: 1em;
+    }
   }
-
-	.grid {
-		grid-template-columns: repeat(4, 210px);
-		height: calc(100vh - 20.5em - 75px);
-	}
-}
-
-@media (min-width: 1300px) {
-	.adms,
-	.sobre {
-		padding: 10em;
-	}
-
-  .membros-da-staff {
-    height: 425vh;
-    padding: 10em;
-  }
-
-  .titulo {
-    height: 60vh;
-  }
-
-	.grid {
-		grid-template-columns: repeat(4, 250px);
-		height: calc(100vh - 20.5em - 75px);
-	}
-}
