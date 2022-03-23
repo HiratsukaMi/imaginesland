@@ -85,6 +85,18 @@ var listaDeLeitura = [{ id: "1", capa: "https://pbs.twimg.com/media/ESLeoC0XsAAq
     { id: "85", capa: "https://www.cafemaisgeek.com/wp-content/uploads/2020/03/kamisama-kiss-1.jpg", nome: "Kamisama Hajimemashita", link: "https://www.spiritfanfiction.com/listas/kamisama-hajimemashita-8238453", },
     { id: "86", capa: "https://www.themoviedb.org/t/p/original/dkq4GO8Ubcu6ketU6MZNmc4Eksi.jpg", nome: "Beelzebub", link: "https://www.spiritfanfiction.com/listas/beelzebub-8246400", },
     { id: "87", capa: "https://www.grapheine.com/wp-content/uploads/2019/11/jp-cover.jpg", nome: "Jurassic Park", link: "https://www.spiritfanfiction.com/listas/jurassic-park-8252997", },
+    {
+        id: "88",
+        capa: "https://wallpaperaccess.com/full/1748500.png",
+        nome: "Himouto! Umaru-chan",
+        link: "https://www.spiritfanfiction.com/listas/himouto-umaru-chan-8255763",
+    },
+    {
+        id: "89",
+        capa: "https://media.seudinheiro.com/uploads/2022/01/harry-potter.jpg",
+        nome: "Harry Potter",
+        link: "https://www.spiritfanfiction.com/listas/harry-potter-8257293",
+    },
 ]
 
 var elementoExibirListasDeLeitura = document.getElementById("exibirListasDeLeitura");
