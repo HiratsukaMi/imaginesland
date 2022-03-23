@@ -110,42 +110,25 @@ body {
   z-index: 1;
 }
 
-.listasDeLeitura {
+.hallDaFama {
   height: auto;
   padding: 6em;
 	background-color: rgba(161,211,255,0.7);
 	color: #18194F;
 }
 
-.imagem-titulo {
-  max-height: 100px;
-  margin: 15px 10px 13px;
-  opacity: 0.7;
-}
-
-.letra {
-  padding: 7px 25px;
-  border-radius: 7px;
-  text-align: center;
-}
-
-.img-listasDeLeitura {
-	border-radius: 0px 25px 25px 25px;
-	object-fit: cover;
-	width: 150px;
+.imagem-hallDaFama {
   height: 100px;
+  margin: 10px 0px;
 }
 
-.listasDeLeitura figcaption {
-  font-weight: bold;
-  font-size: 1.1em;
-}
-
-#exibirListasDeLeitura {
-  display: grid;
-  grid-template-columns: repeat(4, 250px);
-  justify-content: space-around;
-  margin-top: 20px;
+.emBreve {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  align-content: center;
 }
 
 .footer {
@@ -167,18 +150,15 @@ body {
   .imaginesland-logo {
     right: 22px;
   } 
-  .imagem-titulo {
-    max-height: 45px;
+  .imagem-hallDaFama {
+    max-height: 80px;
+    margin-top: 1em;
   }
-  #exibirListasDeLeitura {
-    display: grid;
-    grid-template-columns: repeat(2, 130px);
-    justify-content: space-around;
-    margin-top: 20px;
+  .emBreve {
+    height: 50vh;
   }
-  
-  .img-listasDeLeitura {
-    width: 100px;
+  .img-emBreve {
+    height: 155px;
   }
 }
 
@@ -186,23 +166,21 @@ body {
   body {
     font-size: 14px;
   }
-  .imaginesland-logo {
-    right: 22px;
-  }
   .nav-item ul {
     top: 45px;
   }
-  .imagem-titulo {
-    max-height: 45px;
+  .imaginesland-logo {
+    right: 22px;
+  } 
+  .imagem-hallDaFama {
+    max-height: 80px;
+    margin-top: 1em;
   }
-  #exibirListasDeLeitura {
-    display: grid;
-    grid-template-columns: repeat(2, 185px);
-    justify-content: space-around;
-    margin-top: 20px;
+  .emBreve {
+    height: 50vh;
   }
-  .img-listasDeLeitura {
-    width: 100px;
+  .img-emBreve {
+    height: 200px;
   }
 }
 
@@ -216,17 +194,15 @@ body {
   .nav-item ul {
     top: 45px;
   }
-  .imagem-titulo {
-    max-height: 65px;
+  .imagem-hallDaFama {
+    max-height: 80px;
+    margin-top: 1em;
   }
-  #exibirListasDeLeitura {
-    display: grid;
-    grid-template-columns: repeat(2, 185px);
-    justify-content: space-around;
-    margin-top: 20px;
+  .emBreve {
+    height: 50vh;
   }
-  .img-listasDeLeitura {
-    width: 100px;
+  .img-emBreve {
+    height: 360px;
   }
 }
 
@@ -240,17 +216,15 @@ body {
   .nav-item ul {
     top: 43px;
   }
-  .imagem-titulo {
-    max-height: 65px;
+  .imagem-hallDaFama {
+    max-height: 80px;
+    margin-top: 1em;
   }
-  #exibirListasDeLeitura {
-    display: grid;
-    grid-template-columns: repeat(3, 185px);
-    justify-content: space-around;
-    margin-top: 20px;
+  .emBreve {
+    height: 50vh;
   }
-  .img-listasDeLeitura {
-    width: 150px;
+  .img-emBreve {
+    height: 390px;
   }
 }
 
@@ -264,13 +238,14 @@ body {
   .nav-item ul {
     top: 46px;
   }
-  #exibirListasDeLeitura{
-    display: grid;
-    grid-template-columns: repeat(3, 185px);
-    justify-content: space-around;
-    margin-top: 20px;
+  .imagem-hallDaFama {
+    max-height: 75px;
+    margin-top: 1em;
   }
-  .img-listasDeLeitura {
-    width: 150px;
+  .emBreve {
+    height: 50vh;
+  }
+  .img-emBreve {
+    height: 500px;
   }
 }
