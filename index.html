@@ -12,32 +12,37 @@
     </head>
 
     <body>
-        <div class="container">
+        <!-- <div class="bg"></div> -->
+        <div class="container-fluid">
             <div class="row">
-                <div class=".col-sm">
+                <div class=".col-xs">
                     <div class="bg"></div>
                     <header>
-                        <nav class="navbar navbar-expand-sm navbar-light margin">
-                            <div class="collapse navbar-collapse">
+                        <div class="container-fluid">
+                            <nav class="navbar navbar-expand fixed-top navbar-light margin">
                                 <ul class="menu-lista navbar-nav">
-                                    <li class="nav-item">
-                                        <a class="nav-link" style="color:#dd406d;" href="#sobre">Sobre</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" style="color:#dd406d;" href="#administracao">Administração</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" style="color:#dd406d;" href="#membrosStaff">Membros da staff</a>
+                                    <li class="nav-item"><a class="nav-link" style="color:#dd406d;" href="#">Início</a>
+                                        <ul>
+                                            <li class="nav-item">
+                                                <a class="nav-link" style="color:#dd406d;" href="#sobre">Sobre</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" style="color:#dd406d;" href="#administracao">Administração</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" style="color:#dd406d;" href="#membrosStaff">Membros da staff</a>
+                                            </li>
+                                        </ul>
                                     </li>
                                     <li class="nav-item">
                                         <a class="nav-link" style="color:#dd406d;" href="listasDeLeitura.html" target="_blank">Listas de Leitura</a>
                                     </li>
-                                    <!--<li class="nav-item">
+                                    <!-- <li class="nav-item">
                                         <a class="nav-link" style="color:#dd406d;" href="hallDaFama.html" target="_blank">Hall da fama (Em breve)</a>
-                                    </li>-->
+                                    </li> -->
                                 </ul>
-                            </div>
-                        </nav>
+                            </nav>
+                        </div>
                         <section class="titulo">
                             <img class="imagem-titulo" src="img/banner2.png" />
                         </section>
@@ -60,7 +65,7 @@
                         </div>
                     </section>
                     <section id="membrosStaff">
-                        <div class="container membros-da-staff text-center margin">
+                        <div class="container-fluid membros-da-staff text-center margin">
                             <h2>Membros da Staff</h2>
                             <!--<section class="wrapper-inputs">
                                 <section>
@@ -81,7 +86,7 @@
                             </section>
                         </div>
                     </section>
-                    <footer class="container text-center footer margin">
+                    <footer class="container-fluid text-center footer margin">
                         <p>Desenvolvido por Michelly Hiratsuka Zorzi</p>
                     </footer>
                 </div>
