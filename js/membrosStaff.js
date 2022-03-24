@@ -384,6 +384,13 @@ var membrosStaff = [
         cargo: "helper/avaliador",
         perfil: "https://www.spiritfanfiction.com/perfil/2c511d94e6a24407bdc7bcb5a3fd14",
     },
+    {
+        id: "56",
+        avatar: "img/2012d81e42c8494dbe2cf49a9240cf.jpg",
+        user: "GhostHaunt",
+        cargo: "designer",
+        perfil: "https://www.spiritfanfiction.com/perfil/2012d81e42c8494dbe2cf49a9240cf",
+    },
 ]
 
 var elementoExibirMembros = document.getElementById("exibirMembros");
